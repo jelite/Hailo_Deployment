@@ -13,7 +13,6 @@ This repository provides example code to run the ResNet18 model on a Hailo devic
   - [`make_hef.py`](#make_hefpy)
   - [`run_hailo.py`](#run_hailopy)
 - [Notes](#notes)
-- [Acknowledgments](#acknowledgments)
 
 ## Prerequisites
 
@@ -22,11 +21,9 @@ This repository provides example code to run the ResNet18 model on a Hailo devic
 - **Hailo device** connected and operational
 - **Python packages**:
   - `numpy`
-  - `Pillow` (PIL)
   - `queue`
   - `threading`
   - `functools`
-  - `argparse`
 
 **Note**: Ensure that you have the Hailo SDK installed and properly configured on your system. Refer to the [Hailo SDK documentation](https://docs.hailo.ai/) for installation instructions.
 
@@ -78,8 +75,3 @@ Performs inference and processes the output results.
 - Device Connection: Ensure that the Hailo device is properly connected and recognized by your system before running the scripts.
 - Batch Size: The default batch size is set to 8. You can modify it in the main() function of the scripts.
 - Input Data: The example uses randomly generated data. Replace it with actual image data as needed.
-
-
-Acknowledgments
-Hailo Technologies for providing the Hailo SDK and documentation.
-Disclaimer: This project is for educational and demonstration purposes. Ensure compliance with all applicable licenses and regulations when using the Hailo SDK and devices.
