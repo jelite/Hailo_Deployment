@@ -52,19 +52,6 @@ Next, use the run_hailo.py script to perform inference using the HEF file genera
 ```bash
 python run_hailo.py
 ```
-Code Overview
-make_hef.py
-Purpose: Converts the ResNet18 model into a format suitable for execution on the Hailo device.
-Processes:
-Exports the model to ONNX format.
-Creates a Hailo Application Representation (HAR) file.
-Compiles the HAR into a Hailo Executable File (HEF).
-run_hailo.py
-- Purpose: Runs inference using the HEF file on the Hailo device.
-- Processes:
-Initializes the Hailo device and loads the HEF file.
-Prepares input data and queues for asynchronous processing.
-Performs inference and processes the output results.
 
 ## Notes
 - Device Connection: Ensure that the Hailo device is properly connected and recognized by your system before running the scripts.
