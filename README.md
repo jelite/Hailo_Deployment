@@ -40,13 +40,13 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-**Step 1: Generate the HEF File**
+# **Step 1: Generate the HEF File**
 First, run the make_hef.py script to generate the HEF file. This script exports the ONNX model, creates a Hailo Application Representation (HAR), and compiles it into a Hailo Executable File (HEF). The example uses the ResNet18 model.
 
 ```bash
 python make_hef.py
 ```
-**Step 2: Run Inference on the Hailo Device**
+# **Step 2: Run Inference on the Hailo Device**
 Next, use the run_hailo.py script to perform inference using the HEF file generated in the previous step.
 
 ```bash
