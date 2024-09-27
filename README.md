@@ -13,7 +13,6 @@ This repository provides example code to run the ResNet18 model on a Hailo devic
   - [`make_hef.py`](#make_hefpy)
   - [`run_hailo.py`](#run_hailopy)
 - [Notes](#notes)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ## Prerequisites
