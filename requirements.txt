@@ -1,0 +1,6 @@
+numpy
+Pillow
+torch
+torchvision
+hailo-sdk-client
+hailo-platform
