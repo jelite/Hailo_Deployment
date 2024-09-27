@@ -21,7 +21,6 @@ This repository provides example code to run the ResNet18 model on a Hailo devic
   - `torch`
   - `torchvision`
 
-**Note**: Ensure that you have the Hailo SDK installed and properly configured on your system. Refer to the [Hailo.ai](https://hailo.ai/) for installation instructions.
 
 ## Installation
 
