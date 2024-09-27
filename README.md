@@ -33,38 +33,34 @@ This repository provides example code to run the ResNet18 model on a Hailo devic
 
 ## Installation
 
-1. **Clone the repository**:
+**Clone the repository:**
 
    ```bash
    git clone https://github.com/yourusername/your-repository.git
-Navigate to the project directory:
-
-bash
-코드 복사
+```
+**Navigate to the project directory:**
+```bash
 cd your-repository
-Install the required Python packages:
+```
+**Install the required Python packages:**
 
-bash
-코드 복사
+```bash
 pip install -r requirements.txt
-Alternatively, install packages manually:
+```
 
-bash
-코드 복사
-pip install numpy Pillow
-Usage
-Step 1: Generate the HEF File
+## Usage
+**Step 1: Generate the HEF File**
 First, run the make_hef.py script to generate the HEF file. This script exports the ONNX model, creates a Hailo Application Representation (HAR), and compiles it into a Hailo Executable File (HEF). The example uses the ResNet18 model.
 
-bash
-코드 복사
+```bash
 python make_hef.py
-Step 2: Run Inference on the Hailo Device
+```
+**Step 2: Run Inference on the Hailo Device**
 Next, use the run_hailo.py script to perform inference using the HEF file generated in the previous step.
 
-bash
-코드 복사
+```bash
 python run_hailo.py
+```
 Code Overview
 make_hef.py
 Purpose: Converts the ResNet18 model into a format suitable for execution on the Hailo device.
@@ -73,18 +69,17 @@ Exports the model to ONNX format.
 Creates a Hailo Application Representation (HAR) file.
 Compiles the HAR into a Hailo Executable File (HEF).
 run_hailo.py
-Purpose: Runs inference using the HEF file on the Hailo device.
-Processes:
+- Purpose: Runs inference using the HEF file on the Hailo device.
+- Processes:
 Initializes the Hailo device and loads the HEF file.
 Prepares input data and queues for asynchronous processing.
 Performs inference and processes the output results.
-Notes
-Device Connection: Ensure that the Hailo device is properly connected and recognized by your system before running the scripts.
-Batch Size: The default batch size is set to 8. You can modify it in the main() function of the scripts.
-Input Data: The example uses randomly generated data. Replace it with actual image data as needed.
-Error Handling: Make sure to handle exceptions and errors, especially related to device connections and data processing.
-License
-This project is licensed under the MIT License.
+
+## Notes
+- Device Connection: Ensure that the Hailo device is properly connected and recognized by your system before running the scripts.
+- Batch Size: The default batch size is set to 8. You can modify it in the main() function of the scripts.
+- Input Data: The example uses randomly generated data. Replace it with actual image data as needed.
+
 
 Acknowledgments
 Hailo Technologies for providing the Hailo SDK and documentation.
