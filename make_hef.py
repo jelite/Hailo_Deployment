@@ -1,5 +1,6 @@
 import torch
 from torchvision import models
+from hailo_sdk_client import ClientRunner
 
 # Exporting the model to ONNX
 device = torch.device("cuda")
@@ -19,8 +20,6 @@ do_constant_folding=False,
 )
 
 # Exporting the ONNX to HAR(Hailo Archive Representation)
-from hailo_sdk_client import ClientRunner
-
 chosen_hw_arch = "hailo8l"
 onnx_path = f"./{model_name}.onnx"
 
@@ -29,7 +28,6 @@ hn, npz = runner.translate_onnx_model(
 		onnx_path,
 		onnx_model_name,
 )
-
 hailo_model_har_name = f"{model_name}.har"
 runner.save_har(hailo_model_har_name)
 
