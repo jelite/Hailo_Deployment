@@ -9,9 +9,6 @@ This repository provides example code to run the ResNet18 model on a Hailo devic
 - [Usage](#usage)
   - [Step 1: Generate the HEF File](#step-1-generate-the-hef-file)
   - [Step 2: Run Inference on the Hailo Device](#step-2-run-inference-on-the-hailo-device)
-- [Code Overview](#code-overview)
-  - [`make_hef.py`](#make_hefpy)
-  - [`run_hailo.py`](#run_hailopy)
 - [Notes](#notes)
 
 ## Prerequisites
